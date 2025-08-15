@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "567448289999",
+    "project_id": "buklod-connect",
+    "storage_bucket": "buklod-connect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567448289999:android:78f89f25826f826b8fedba",
+        "android_client_info": {
+          "package_name": "com.example.buklodconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567448289999-d8ch64pam91r1v9oiqnvng453bgeep74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDilpbFKzHcD0GsindSHjEbPsqB_ieR5rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567448289999-d8ch64pam91r1v9oiqnvng453bgeep74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567448289999:android:27df90b60044fd6f8fedba",
+        "android_client_info": {
+          "package_name": "com.example.buklodconnect2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567448289999-d8ch64pam91r1v9oiqnvng453bgeep74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDilpbFKzHcD0GsindSHjEbPsqB_ieR5rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567448289999-d8ch64pam91r1v9oiqnvng453bgeep74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

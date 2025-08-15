@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251151573858",
+    "project_id": "buklod-66e1c",
+    "storage_bucket": "buklod-66e1c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251151573858:android:316cd080e99710cc4c423b",
+        "android_client_info": {
+          "package_name": "com.example.buklodconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgBaqO16J6I4M1rreqX5SpLInjPpLTeeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
