@@ -24,3 +24,6 @@ jobs:
           projectId: buklod-connect
           channelId: live
           public: buklodwebapp
+          skipInstall: true    
+    skipInstall: true
+    skipBuild: true
