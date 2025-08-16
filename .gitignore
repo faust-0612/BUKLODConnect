@@ -1,35 +1,45 @@
+# =========================
 # Android / IDE
+# =========================
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.gradle/
+local.properties
+/.idea/caches/
+ /.idea/libraries/
+ /.idea/modules.xml
+ /.idea/workspace.xml
+ /.idea/navEditor.xml
+ /.idea/assetWizardSettings.xml
 .DS_Store
 
+# =========================
 # Build output
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+# =========================
+/build/
+/captures/
+/.externalNativeBuild/
+/cxx/
+/app/build/
 
-# Node modules (all node_modules anywhere)
+# =========================
+# Node modules & package caches
+# =========================
 node_modules/
-
-# Firebase cache
-.firebase/
-
-# Babel / general cache
-**/.cache/
-
-# React build folder
-app/build/
-
-# Misc logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# =========================
+# Firebase
+# =========================
+.firebase/
+
+# =========================
+# Babel / general cache
+# =========================
+**/.cache/
+
+# =========================
+# Environment files
+# =========================
+.env
