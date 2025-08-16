@@ -1,9 +1,17 @@
 {
   "hosting": {
     "public": "buklodwebapp",
-    "ignore": ["firebase.json", "**/.*"]
+    "ignore": [
       "firebase.json",
-      "**/.*"
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
+
