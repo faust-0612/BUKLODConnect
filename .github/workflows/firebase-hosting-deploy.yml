@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      # Deploy static files
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v1
         with:
@@ -24,6 +22,5 @@ jobs:
           projectId: buklod-connect
           channelId: live
           public: buklodwebapp
-          skipInstall: true    
-    skipInstall: true
-    skipBuild: true
+          skipInstall: true
+          skipBuild: true
