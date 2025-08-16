@@ -1,4 +1,4 @@
-name: Deploy Static Site to Firebase Hosting
+name: Deploy Firebase Hosting
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v1
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUKLOD_CONNECT }}"
-          projectId: buklod-connect
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEW_BUKLOD_CONNECT }}
+          projectId: NEW-BUKLOD-CONNECT
           channelId: live
           public: buklodwebapp
