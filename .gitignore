@@ -1,3 +1,4 @@
+# Android / IDE
 *.iml
 .gradle
 /local.properties
@@ -8,8 +9,27 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
+
+# Build output
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# Node modules (all node_modules anywhere)
+node_modules/
+
+# Firebase cache
+.firebase/
+
+# Babel / general cache
+**/.cache/
+
+# React build folder
+app/build/
+
+# Misc logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
