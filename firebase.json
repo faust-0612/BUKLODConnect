@@ -1,6 +1,5 @@
 {
   "hosting": {
-<<<<<<< HEAD
     "public": "buklodwebapp",
     "ignore": [
       "firebase.json",
@@ -12,13 +11,6 @@
         "source": "**",
         "destination": "/index.html"
       }
-=======
-    "public": "build",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      { "source": "**", "destination": "/index.html" }
->>>>>>> 282b9321 (Initial commit)
     ]
   }
 }
-
