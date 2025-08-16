@@ -1,42 +1,24 @@
-name: Deploy to Firebase Hosting
+name: Deploy Static Site to Firebase Hosting
+
 on:
   push:
     branches:
-      - main  # or whatever branch you deploy from
+      - main
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v1  # only relevant if you're using frameworks like Flutter
-      - name: Install Firebase Tools
-        run: npm install -g firebase-tools
-      - name: Build
-        run: npm ci && npm run build   # adjust to your build step
-      - name: Deploy to Firebase
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy --only hosting
-name: Deploy to Firebase Hosting
-on:
-  push:
-    branches:
-      - main   # or 'master' if that's your default branch
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      - name: Build project
-        run: npm ci && npm run build
-
-      - name: Deploy to Firebase
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy --only hosting
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUKLOD_CONNECT }}"
+          projectId: buklod-connect
+          channelId: live
+          public: buklodwebapp
